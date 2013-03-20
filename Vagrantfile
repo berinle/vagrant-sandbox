@@ -66,11 +66,18 @@ Vagrant.configure("2") do |config|
   # #               Managed by Puppet.\n"
   # # }
   #
+
+  config.vm.provision :shell, :path => "shell/main.sh"
+
   config.vm.provision :puppet do |puppet|
-    puppet.manifests_path = "manifests"
-    puppet.module_path = "modules"
-    puppet.manifest_file  = "base.pp"
-    puppet.options = ["--user","vagrant"]
+   puppet.manifests_path = "manifests"
+   puppet.module_path = "modules"
+   puppet.manifest_file  = "main.pp"
+
+  #puppet.manifests_path = "puppet/manifests"
+  #puppet.module_path = "puppet/modules"
+  #puppet.manifest_file  = "main.pp"
+    #puppet.options = ["--user","vagrant"]
   end
 
   # Enable provisioning with chef solo, specifying a cookbooks path, roles
