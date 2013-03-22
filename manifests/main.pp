@@ -23,3 +23,5 @@ class jmeterbook {
 		creates => "/vagrant/jmeter-2.9"
 	}
 }
+
+include jmeterbook

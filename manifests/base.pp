@@ -54,3 +54,5 @@ class must-have {
 	}
 
 }
+
+include must-have
