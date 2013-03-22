@@ -1,7 +1,7 @@
 #!/bin/sh
 
 # Directory in which librarian-puppet should manage its modules directory
-PUPPET_DIR=/etc/puppet/
+PUPPET_DIR=/vagrant
 
 # NB: librarian-puppet might need git installed. If it is not already installed
 # in your basebox, this will manually install it at this point using apt or yum
