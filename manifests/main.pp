@@ -11,7 +11,7 @@ package { ["vim",
 
 exec {
 		"download_jmeter":
-		command => "curl -L http://www.bizdirusa.com/mirrors/apache/jmeter/binaries/apache-jmeter-2.9.tgz | tar zx",
+		command => "curl -L http://archive.apache.org/dist/jmeter/binaries/apache-jmeter-2.9.tgz | tar zx",
 		creates => "/home/vagrant/apache-jmeter-2.9",		
 		timeout => 0,
 		cwd => "/home/vagrant",
